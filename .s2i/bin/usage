@@ -4,8 +4,11 @@ This is the golang-s2i S2I image:
 To use it, install S2I: https://github.com/openshift/source-to-image
 
 Sample invocation:
+make build
 
 s2i build git://<source code> golang-s2i-builder <application image name>
+OR
+s2i build <path/to/golang/code> golang-s2i-builder <application image name>
 
 You can then run the resulting image via:
 docker run <application image>
